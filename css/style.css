@@ -1,0 +1,536 @@
+/* Seteos iniciales */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* body {
+    
+} */
+#pantalla {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    display: flex ;
+}
+div.contenedor {
+    width: 1170px;
+    height: auto;
+    position: relative;
+    float: auto;
+    margin: 0px auto;
+    max-width: 100%;
+    /* display: inline-block; */
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    float: left;
+    background-color: #f2f2f2;
+    border-bottom: 4px solid #31593f;
+    z-index: 2;
+}
+
+header a img {
+    width: 130px;
+    height: 120px;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+b {
+    font-weight: 600;
+}
+nav {
+    position: relative;
+    float: right;
+    top: 0px;
+    display: flex ;
+}
+/* BOTÓN MENÚ */
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #fafafa;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#icon-menu:hover{
+    opacity: 0.8;
+}
+/* .dropdown nav ul li a i{
+    display: none; */
+
+/*FINISH BOTON*/ 
+
+.dropdown ul{
+    float: right;
+    margin-right: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    z-index: 100;
+  }
+.dropdown ul li {
+    display: inline-block;
+    font-size: 18px;
+}
+.dropdown ul li a{
+    color: #5a5b53;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+}
+.dropdown ul li a {
+    text-decoration: none;
+}
+.dropdown ul li a:hover {
+    color: #ab1c1e;
+}
+.dropdown ul li a.active {
+    color: #31593f;
+}
+.dropdown ul ul {
+    position: absolute;
+    top: 85px;
+    padding-left: 5px;
+    opacity: 0;
+    visibility: hidden;
+}
+.dropdown ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+.dropdown ul ul li {
+    width: 180px;
+    display: list-item;
+    position: relative;
+    border-top: none;
+    list-style: none;
+}
+.dropdown ul ul li a {
+    line-height: 50px;
+}
+
+ul .submenu {
+    width: 210px;
+    left: 120;
+    background-color: #f2f2f2;
+}
+.fas {
+    margin-left: 5px;
+}
+section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+}
+section.impulso-prin {
+    width: 100%;
+    height: 505px;
+    position: relative;
+    float: left;
+    padding-top: 85px;
+    background-color: #e0e5d7;
+    top: 80px;
+    display: flex;
+}
+div.bt-gruas {
+    width: 314px;
+    height: 306px;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    background-image: url("bt-gruas.png");
+    background-color: #adc5b7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bt-gruas:hover {
+    background-image: url("bt-gruasho.png");
+    background-color: #adc5b7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.bt-hidrogruas {
+    width: 314px;
+    height: 306px;
+    position: relative;
+    float: left;
+    background-image: url("bt-hidro.png");
+    background-color: #adc5b7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bt-hidrogruas:hover {
+    background-image: url("bt-hidroho.png");
+    background-color: #adc5b7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.bt-semi {
+    width: 314px;
+    height: 140px;
+    position: relative;
+    float: right;
+    margin-bottom: 26px;
+    background-image: url("bt-semir.png");
+    background-color: #adc5b7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bt-semi:hover {
+    background-image: url("bt-semirho.png");
+    background-color: #adc5b7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.bt-carretones {
+    width: 314px;
+    height: 140px;
+    position: relative;
+    float: right;
+    background-image: url("bt-carreton.png");
+    background-color: #adc5b7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bt-carretones:hover {
+    background-image: url("bt-carretonho.png");
+    background-color: #adc5b7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.impulso-sec {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    float: left;
+    padding-top: 75px;
+    background-color: #adc5b7;
+}
+div.bt-seguridad {
+    width: 425px;
+    height: 110px;
+    position: relative;
+    float: left;
+    padding-top: 30px;
+    padding-left: 110px;
+    background-color: #f2f2f2;
+}
+div.bt-somos {
+    width: 425px;
+    height: 110px;
+    position: relative;
+    float: right;
+    padding-top: 30px;
+    padding-left: 75px;
+    background-color: #f2f2f2;
+}
+div.bt-seguridad p {
+    color: #31593f;
+    font-weight: 900;
+    font-size: 35px;
+    position: relative;
+    float: left;
+    margin: 0px auto;
+}
+div.bt-somos p {
+    color: #31593f;
+    font-weight: 900;
+    font-size: 35px;
+    position: relative;
+    float: left;
+    margin: 0px auto;
+}
+#servicios {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    float: left;
+    padding: 60px;
+    background-color: #e0e5d7;
+}
+h3 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+#servicios p {
+    font-weight: 300;
+    font-size: 28px;
+}
+#servicios ul {
+    font-weight: 300;
+    font-size: 28px;
+    list-style-type: circle;
+}
+section.somos {
+    width: 100%;
+    height: 500px;
+    padding-top: 60px;
+    background-color: #adc5b7;
+}
+section.somos p {
+    font-weight: 300;
+    font-size: 28px;
+}
+footer {
+    width: 100%;
+    height: 330px;
+    position: relative;
+    float: left;
+    clear: both;
+    padding-top: 60px;
+    background-color: #f2f2f2;
+    border-top: 4px solid #31593f;
+}
+footer a {
+    position: relative;
+    float: left;
+}
+footer div.ft {
+    position: relative;
+    float: right;
+}
+h4 {
+    font-weight: 700;
+    font-size: 26px;
+    
+}
+div.ft p {
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0px;
+}
+
+/* DELCARACIONES DE PÁGINAS */
+
+#gruas {
+    width: 100%;
+    height: 610px;
+    position: relative;
+    float: left;
+    padding-top: 75px;
+    background-color: #adc5b7;
+}
+article {
+    width: 45%;
+    height: auto;
+    position: relative;
+    float: left;
+    font-weight: 300;
+    font-size: 24px;
+}
+.img-nota {
+    width: auto;
+    height: auto;
+    position: relative;
+    float: right;
+}
+#hidrogruas {
+    width: 100%;
+    height: 610px;
+    position: relative;
+    float: left;
+    padding-top: 75px;
+    background-color: #adc5b7;
+}
+#carreton {
+    width: 100%;
+    height: 610px;
+    position: relative;
+    float: left;
+    padding-top: 75px;
+    background-color: #adc5b7;
+}
+#seguridad {
+    width: 100%;
+    height: 610px;
+    position: relative;
+    float: left;
+    padding-top: 75px;
+    background-color: #adc5b7;
+}
+#contacto {
+    width: 100%;
+    height: 625px;
+    position: relative;
+    float: left;
+    padding-top: 120px;
+    background-image: url("contacto.png");
+    background-color: #adc5b7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#trabaja {
+    width: 100%;
+    height: 625px;
+    position: relative;
+    float: left;
+    padding-top: 120px;
+    background-image: url("trabaja.png");
+    background-color: #adc5b7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.cuadro {
+    width: 760px;
+    height: 295px;
+    position: relative;
+    float: left;
+    font-weight: 300;
+    font-size: 24px;
+}
+div.contact {
+    padding: 10px 20px;
+    background-color: #adc5b7;
+}
+div.contact a {
+    text-decoration: underline;
+    color: #000;
+    font-weight: 600;
+}
+div.contact a:hover {
+    color: #ab1c1e;
+}
+div.trabajo {
+    padding: 20px;
+    background-color: #E0E5D7;
+}
+div.trabajo a {
+    text-decoration: underline;
+    color: #000;
+    font-weight: 600;
+}
+div.trabajo a:hover {
+    color: #ab1c1e;
+}
+
+/* - Responsive Design - */
+@media screen and (max-width: 1220px) {
+
+#pantalla{
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+}
+@media screen and (max-width: 1020px) {
+div.contenedor {
+    width: 100%;
+    flex-direction: column;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.contenedor section{
+    max-width: 300px;
+    margin: 10px;
+}
+}
+
+@media screen and (max-width: 800px) {
+
+body{
+        overflow-x: hidden;
+       
+    }
+
+.container-all{
+    transition: all 300ms cubic-bezier(1,0,0,1);
+    justify-content: center
+}
+.move-container-all{
+    transform: translateX(300px);
+}
+
+.dropdown{
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background: #fff;
+    overflow: hidden;
+    transform: translateX(-350px);
+    box-shadow: 10px 0 20px -25px black;
+    transition: all 300ms cubic-bezier(1,0,0,1);
+    margin-top: 75px;
+}
+.submenu li{
+position: absolute;
+
+}
+.show-lateral {
+    width: 300px;
+    transform: translateX(0px);
+}
+.dropdown nav ul{
+    flex-direction: column;
+}
+.dropdown nav ul li{
+    max-width: 200px;
+    height: 50px;
+    justify-content: flex-start;
+}
+.dropdown nav ul li a{
+    margin-top: 40px;
+}
+.dropdown nav ul li a i{
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#icon-menu{
+    display:flex;
+}
+section.impulso-prin {
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+/* .contenedor-section{
+    display: flex;
+    flex-wrap: wrap;
+} */
+}
